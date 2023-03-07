@@ -1,0 +1,134 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  background-color: hsl(0, 0%, 100%);
+  width: 600px;
+  border-radius: 10px;
+  height: 440px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.perfume-img {
+  height: 440px;
+  border-radius: 10px 0 0 10px;
+}
+
+.div-info {
+  padding: 0 30px;
+}
+
+.p-info {
+  line-height: 2;
+}
+
+.price-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+p {
+  font-size: 14px;
+}
+
+.perfume-p {
+  letter-spacing: 3px;
+  padding-top: 20px;
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+  line-height: 1;
+}
+
+.old-price {
+  padding: 0 0 0 20px;
+  text-decoration: line-through;
+}
+
+.actual-price {
+  font-size: 28px;
+  font-family: "Fraunces", serif;
+  margin: 0;
+  color: hsl(158, 36%, 37%);
+}
+
+.attribution {
+  display: none;
+}
+
+.add-cart {
+  margin-top: 10px;
+  padding: 15px 0;
+  width: 246px;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: hsl(158, 36%, 37%);
+  display: flex;
+  justify-content: center;
+}
+
+.add-cart:hover,
+.add-cart:active {
+  background-color: hsl(158, 36%, 24%);
+}
+
+.cart {
+  margin-right: 10px;
+}
+
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Fraunces', serif; */
+@media screen and (max-width: 614px) {
+  .perfume-img {
+    content: url("./images/image-product-mobile.jpg");
+    height: 70%;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+    border-radius: 10px;
+    height: 80%;
+  }
+
+  .add-cart {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .perfume-img {
+    height: 40%;
+    width: 100%;
+  }
+
+  .card {
+    height: 70%;
+  }
+}
